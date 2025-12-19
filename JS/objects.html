@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // by using literals
+        let pen={id:"p01",mrp:10,colcor:"red",mfd:"2025"}
+        // document.write("mrp of pen is "+pen.mrp)
+
+        let lap={ brand:"hp, lenovo",color:"silver"}
+        // document.write(lap.brand+ lap.color)
+
+        // by using new keyword
+        let mobile=new Object();
+        mobile.id="m01"
+        mobile.mrp=20000
+        mobile.color="black"
+        mobile.mfd="2020"
+        mobile.brand="oppo"
+        document.write(mobile.brand + mobile.mrp  +mobile.color)
+
+
+        // through constructor'
+
+        function book(name, author, price)
+        {
+            this.name=name
+            this.author=author
+            this.price=price
+        }
+
+        ax=new book("fairy tale","xyz",800);
+
+        document.write(ax.author)
+
+    </script>
+</body>
+</html>

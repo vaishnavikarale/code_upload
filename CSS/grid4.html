@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 700px;
+            height: 700px;
+            display: grid;
+            /* background-image: linear-gradient(to right , red, pink, yellow); */
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows:1fr 1fr 1fr ;
+            gap: 10px;
+            border: 2px solid red ;
+        }
+        .child1{
+            background-image: url(nwe.webp);
+           
+            
+        }
+        .child2{
+            background-image: url(spring.jpg);
+          
+            
+        }
+        .child3{
+            background-image: url(spring.jpg);
+     
+        }
+        .child1,.child2,.child3{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1div</div>
+        <div class="child2">2div</div>
+        <div class="child3">3div</div>
+        <div class="child1">1div</div>
+        <div class="child2">2div</div>
+        <div class="child3">3div</div>
+    </div>
+</body>
+</html>

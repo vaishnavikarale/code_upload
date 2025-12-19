@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Mobile Pattern </h1>
+
+        <!-- pattern for 10 digit mobile no -->
+         <lable>only 10 digits:</lable>
+         <input type="tel" name="mobile" pattern="[0-9]{10}">
+    <br>
+         <br>
+
+         <!-- start5ing from 7,8,9 -->
+         <lable>start from 789:</lable>
+         <input type="tel" name="mobile" pattern="[789][0-9]{9}">
+    <br>
+
+         <br>
+
+         <!-- country code +91 -->
+         <lable>country code +91:</lable>
+          <input type="tel" name="mobile" pattern="[/+91][789][0-9]{9}"/>
+          
+    <br><br>
+
+    <!-- allow spaces / dashes 
+     eg: 123 1234 123 / 123-1234-123 -->
+     <lable>For dash & space</lable>
+     <input type="tel" name="mobile" pattern="[0-9]{3}[-][0-9]{4}[-][0-9]{3}" />
+     <br>
+
+
+
+     <button type="submit">Submit</button>
+    
+    
+        </form>
+</body>
+</html>

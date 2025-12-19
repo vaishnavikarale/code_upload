@@ -1,0 +1,35 @@
+h1{
+    color: rgb(208, 208, 229);
+    text-align: center;
+}
+form{
+    background-image: linear-gradient(to right , pink , red, yellow);
+   height: 400px;
+   width: 400px;
+   margin-left: 40%;
+   padding-left: 30px;
+   
+ 
+   
+}
+body{
+    background-image: url(spring.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+input{
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 5px 8px green;
+}
+#name{
+    border: 1px solid white;
+    box-shadow: 2px 4px 9px yellow;
+}
+#btn{
+    background-color:blue;
+    color: white;
+    border-style: none;
+}

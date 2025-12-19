@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- colspan: used to merge columns 
+     rowspan: used to merge rows -->
+
+     <table>
+        <caption>Student Table</caption>
+        <tr>
+            <th>sr.no</th>
+            <!-- colspan name & age -->
+            <th colspan="2">name</th>
+            <th>age</th>
+            <th colspan="3">location</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>John</td>
+            <td>ram</td>
+             <td rowspan="2">30</td>
+             <td>pune</td>
+             <td>mumbai</td>
+             <td>bang</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>ram</td>
+              <td>pune</td>
+             <td>mumbai</td>
+             <td>bang</td>
+        </tr>
+     </table>
+</body>
+</html>

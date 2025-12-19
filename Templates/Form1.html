@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="Form1.css">
+</head>
+<body>
+    <h1>Html form with all input types</h1>
+    <div>
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter name" >
+        <br>
+        <!-- dropdown -->
+         <label for="country">Country:</label>
+         <select id="country" name="country">
+            <option value="india">india</option>
+            <option value="china">china</option>
+        </select>
+        <br>
+        <!-- textarea -->
+        <label>Add:</label>
+        <textarea id="add" name="add" placeholder="enter your add" rows="3" cols="3"></textarea>
+        <br>
+        <!-- normal  -->
+         <label>Mobile no:</label>
+         <input type="tel" id="mobile" name="mobile" placeholder="enter mobile no" pattern="[0-9]{10}">
+         <br>
+         <!-- 789 -->
+         <label>Mobile no:</label>
+         <input type="tel" id="mobile" name="mobile" placeholder="enter mobile no" pattern="[789][0-9]{9}">
+         <br>
+         <!-- +91 -->
+         <label>Mobile no:</label>
+         <input type="tel" id="mobile" name="mobile" placeholder="enter mobile no"
+          pattern="[/+91][789][0-9]{9}">
+          <br>
+          <!--123 -1234-123 -->
+          <label>Mobile no:</label>
+         <input type="tel" id="mobile" name="mobile" placeholder="enter mobile no" pattern="[0-9]{3}[-][0-9]{4}[-][0-9]{3}">
+       
+       
+         <br>
+        <!-- submit -->
+         <input type="submit" value="Submit" id="btn">
+
+    </form>
+</div>
+</body>
+</html>
